@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Set up your HTML -->
+    <div class="owl-carousel owl-theme owl-loaded">
+        <div class="owl-stage-outer">
+            <div class="owl-stage">
+                <div class="owl-item">
+                    <h1>1</h1>
+                </div>
+                <div class="owl-item">
+                    <h1>2</h1>
+                </div>
+                <div class="owl-item">
+                    <h1>3</h1>
+                </div>
+                <div class="owl-item">
+                    <h1>4</h1>
+                </div>
+                <div class="owl-item">
+                    <h1>5</h1>
+                </div>
+                <div class="owl-item">
+                    <h1>6</h1>
+                </div>
+                <div class="owl-item">
+                    <h1>7</h1>
+                </div>
+                <div class="owl-item">
+                    <h1>8</h1>
+                </div>
+            </div>
+            <div class="owl-controls">
+                <div class="custom-nav owl-nav"></div>
+            </div>
+           
+        </div>
+    </div>
+    <div class="hello">
+        <h1>Hello Everyone</h1>
+        <h4>This is my first Carousel</h4>
+        <p>This is amazing</p>
+    </div>
+    
+    <script src="owl/jquery-3.6.0.min.js"></script>
+    <script src="owl/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                nav:true,
+                navContainer: '.owl-nav',
+                navText: ["<img src='arrL.png'>","<img src='arrR.png'>"],
+                rtl: false,
+                loop:true,
+                
+              
+                autoplay:true,
+                autoplayTimeout:3000,
+                autoplayHoverPause:true,
+               
+                dots: true,
+                dotsEach:true,
+                responsiveClass:true,
+                responsive:{
+                    0:{
+                        items:1,
+                        // nav:true
+                    },
+                    600:{
+                        items:3,
+                        
+                       
+                    },
+                    1000:{
+                        items:5,
+                        // nav:true,
+                        
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
